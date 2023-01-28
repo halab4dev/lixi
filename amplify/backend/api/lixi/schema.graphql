@@ -20,4 +20,4 @@ type Subscription {
     onLixiCreateByYear(year: Int!): Lixi
     @aws_subscribe(mutations: ["createLixi"])
 }
-                
+                  
