@@ -1,0 +1,311 @@
+@font-face {
+    font-family: "Pacifico";
+    src: url("./font/Pacifico/Pacifico-Regular.ttf");
+}
+
+@media only screen and (max-width: 390px) {
+    body {
+        height: 100%;
+        background-image: url("./image/bg_image_mobile.jpeg");
+        background-position: 10% 0%;
+        background-size: 620px 500px;
+    }
+
+    .title {
+        margin: 0;
+        padding-left: 95px;
+    }
+
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .wheel {
+        margin-left: 50px;
+    }
+
+    #cat-pointer {
+        left: 340px;
+        top: 355px;
+        clip: rect(0, 50px, 50px, 0);
+        width: 100px;
+    }
+
+    .spin-button {
+        left: 183px;
+        top: 193px;
+        border-radius: 100px;
+        width: 100px;
+        height: 100px;
+        font-size: 16px;
+        font-weight: 100;
+    }
+
+    #name-input {
+        top: 410px;
+        left: 110px;
+        width: 250px;
+        height: 40px;
+    }
+
+    .result-scroll {
+        width: 115%;
+        top: 480px;
+        left: 5px;
+    }
+
+    .result-title {
+        top: 535px;
+        left: 180px;
+    }
+
+    #result-list {
+        font-size: 18px;
+        font-weight: 100;
+        top: 585px;
+        left: 30px;
+        height: 300px;
+        width: 350px;
+    }
+}
+
+@media only screen and (min-width: 391px) and (max-width: 1440px) {
+    body {
+        height: 100%;
+        background-image: url("./image/bg_image_pc.jpeg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .title {
+        margin: 0;
+        font-size: 24px;
+        padding-left: 95px;
+    }
+
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .wheel {
+        margin-left: 300px;
+    }
+
+    #cat-pointer {
+        left: 590px;
+        top: 380px;
+        clip: rect(0, 50px, 50px, 0);
+        width: 100px;
+    }
+
+    .spin-button {
+        left: 433px;
+        top: 220px;
+        border-radius: 100px;
+        width: 100px;
+        height: 100px;
+        font-size: 16px;
+        font-weight: 100;
+    }
+
+    #name-input {
+        top: 450px;
+        left: 340px;
+        width: 300px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid lightgrey;
+    }
+
+    .result-scroll {
+        width: 500px;
+        top: 100px;
+        left: 700px;
+    }
+
+    .result-title {
+        top: 160px;
+        left: 890px;
+        font-size: 20px;
+    }
+
+    #result-list {
+        font-size: 16px;
+        font-weight: 100;
+        top: 220px;
+        left: 750px;
+        height: 350px;
+        width: 350px;
+    }
+}
+
+
+
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+    body {
+        height: 100%;
+        background-image: url("./image/bg_image_pc.jpeg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .title {
+        margin: 0;
+        font-size: 24px;
+        padding-left: 95px;
+    }
+
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .wheel {
+        margin-top: 100px;
+        margin-left: 500px;
+    }
+
+    #cat-pointer {
+        left: 790px;
+        top: 480px;
+        clip: rect(0, 50px, 50px, 0);
+        width: 100px;
+    }
+
+    .spin-button {
+        left: 633px;
+        top: 315px;
+        border-radius: 100px;
+        width: 100px;
+        height: 100px;
+        font-size: 16px;
+        font-weight: 100;
+    }
+
+    #name-input {
+        top: 550px;
+        left: 530px;
+        width: 300px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid lightgrey;
+    }
+
+    .result-scroll {
+        width: 600px;
+        top: 180px;
+        left: 1000px;
+    }
+
+    .result-title {
+        top: 260px;
+        left: 1240px;
+        font-size: 20px;
+    }
+
+    #result-list {
+        font-size: 16px;
+        font-weight: 100;
+        top: 340px;
+        left: 1050px;
+        height: 400px;
+        width: 450px;
+    }
+}
+
+.title {
+    color: red;
+    text-align: center;
+    font-family: Pacifico;
+    font-weight: bold;
+}
+
+/*.wheel-area {*/
+/*    !*position: relative;*!*/
+/*}*/
+
+.wheel {
+    z-index: 1;
+}
+
+#cat-pointer {
+    position: absolute;
+    z-index: 999;
+}
+
+.spin-button {
+    position: absolute;
+    z-index: 2;
+    color: red;
+    font-family: Pacifico;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.spin-button-active {
+
+    background: #FEF496;
+    background-image: -webkit-linear-gradient(top, #FEF496, #F3CD4E);
+    background-image: -moz-linear-gradient(top, #FEF496, #F3CD4E);
+    background-image: -ms-linear-gradient(top, #FEF496, #F3CD4E);
+    background-image: -o-linear-gradient(top, #FEF496, #F3CD4E);
+    background-image: -webkit-gradient(to bottom, #FEF496, #F3CD4E);
+    -webkit-box-shadow: 1px 1px 20px 0 #F5F5DC;
+    -moz-box-shadow: 1px 1px 20px 0 #F5F5DC;
+    box-shadow: 1px 1px 20px 0 #F5F5DC;
+    border: solid #E4BA3C 1px;
+}
+
+.spin-button-active:hover {
+    box-shadow: 1px 1px 5px 5px beige;
+    cursor: pointer;
+}
+
+.spin-button-disable {
+    background: #E6E6E6;
+    background-image: -webkit-linear-gradient(top, #E6E6E6, rgba(0, 0, 0, 0.25));
+    background-image: -moz-linear-gradient(top, #E6E6E6, rgba(0, 0, 0, 0.25));
+    background-image: -ms-linear-gradient(top, #E6E6E6, rgba(0, 0, 0, 0.25));
+    background-image: -o-linear-gradient(top, #E6E6E6, rgba(0, 0, 0, 0.25));
+    background-image: -webkit-gradient(to bottom, #E6E6E6, rgba(0, 0, 0, 0.25));
+    -webkit-box-shadow: 1px 1px 20px 0 #F5F5DC;
+    -moz-box-shadow: 1px 1px 20px 0 #F5F5DC;
+    box-shadow: 1px 1px 20px 0 #F5F5DC;
+    border: solid #7C7C7C 1px;
+}
+
+.spin-button-disable:hover {
+    cursor: not-allowed;
+}
+
+#name-input {
+    position: absolute;
+}
+
+.result-area {
+    text-align: center;
+}
+
+#result-list {
+    z-index: 999;
+    position: absolute;
+    font-family: Pacifico;
+    overflow-y: scroll;
+}
+
+.result-title {
+    font-family: Pacifico;
+    position: absolute;
+    z-index: 999;
+}
+
+.result-scroll {
+    position: absolute;
+    z-index: 1;
+}

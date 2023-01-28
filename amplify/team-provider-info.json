@@ -1,0 +1,26 @@
+{
+  "production": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-lixi-production-142840-authRole",
+      "UnauthRoleArn": "arn:aws:iam::135157175895:role/amplify-lixi-production-142840-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::135157175895:role/amplify-lixi-production-142840-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-lixi-production-142840-deployment",
+      "UnauthRoleName": "amplify-lixi-production-142840-unauthRole",
+      "StackName": "amplify-lixi-production-142840",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:135157175895:stack/amplify-lixi-production-142840/106adbe0-9d4b-11ed-929b-0a77fafcbfb9",
+      "AmplifyAppId": "d2t93idxnr1s9e"
+    },
+    "categories": {
+      "api": {
+        "lixi": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d2t93idxnr1s9e",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}

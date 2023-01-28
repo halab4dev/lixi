@@ -1,0 +1,35 @@
+<html lang="vi" char>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chúc mừng năm mới</title>
+    <link rel="icon" type="image/png" href="./image/chinese-lantern.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+</head>
+<body>
+<div class="title">Happy New Year<br/> From Halab with love 😘</div>
+<div class="main-content">
+    <div class="wheel-area">
+        <canvas id='canvas' class="wheel" width="350" height="350">
+            Canvas not supported, use another browser.
+        </canvas>
+        <img id="cat-pointer" src="./image/cat_pointer.png"></img>
+        <button id="spin-button" class="spin-button spin-button-active">Nhận <br/>Lì xì</button>
+        <input id="name-input" placeholder='Điền tên vào đây rồi bấm "Nhận Lì xì" nhé'>
+    </div>
+    <div class="result-area">
+        <img src="./image/paper-scroll.png" class="result-scroll"/>
+        <p class="result-title">Ai may mắn nào</p>
+        <div id="result-list"></div>
+    </div>
+</div>
+
+<script src="main.bundle.js"></script>
+</body>
+</html>
